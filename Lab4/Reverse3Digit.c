@@ -1,14 +1,17 @@
-#include<stdio.h>
-int main() {
-	int input, ans=0;
+#include <stdio.h>
+int main()
+{
+	int input, ans = 0;
 	printf("Print number\n");
 	scanf("%d", &input);
-	if(input==0) {
+	if (input == 0)
+	{
 		printf("0\n");
 		return 0;
 	}
-	while(input>0) {
-		ans = ans*10 + input%10;
+	while (input > 0)
+	{
+		ans = ans * 10 + input % 10;
 		input /= 10;
 	}
 	printf("%d\n", ans);

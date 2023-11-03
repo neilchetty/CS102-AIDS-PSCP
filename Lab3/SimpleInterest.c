@@ -1,6 +1,7 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main() {
+int main()
+{
         int principle, interest, time;
         printf("Enter the principle amount\n");
         scanf("%d", &principle);
@@ -8,6 +9,6 @@ int main() {
         scanf("%d", &interest);
         printf("Enter the time\n");
         scanf("%d", &time);
-	printf("Interest is: %d\n", (principle*time*interest/100));
-	return 0;
+        printf("Interest is: %d\n", (principle * time * interest / 100));
+        return 0;
 }

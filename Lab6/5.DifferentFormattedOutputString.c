@@ -19,7 +19,7 @@ int main()
 Name: Neil Chetty
 Name: N
 Name:  Ne
-Name: Neil      
+Name: Neil
 Name: Nei
 Name: Nei
 */

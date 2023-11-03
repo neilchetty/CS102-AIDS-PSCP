@@ -1,9 +1,10 @@
-#include<stdio.h>
-int main() {
+#include <stdio.h>
+int main()
+{
 	int a;
-	short int  b;
-	long int  c;
-	long long int  d;
+	short int b;
+	long int c;
+	long long int d;
 	float e;
 	double f;
 	long double g;
