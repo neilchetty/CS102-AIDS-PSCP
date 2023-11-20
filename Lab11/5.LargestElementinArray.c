@@ -1,6 +1,8 @@
-// Find largest and smallest element from an 1D array.
+// Largest element from an array using functions
 
 #include <stdio.h>
+int helper(int arr[], int n);
+
 int main()
 {
     int n;
@@ -12,29 +14,28 @@ int main()
     {
         scanf("%d", &arr[i]);
     }
-    int largest = arr[0], smallest = arr[0];
+    printf("The largest element of array is %d\n", helper(arr, n));
+    return 0;
+}
+
+int helper(int arr[], int n)
+{
+    int largest = arr[0];
     for (int i = 1; i < n; i++)
     {
         if (arr[i] > largest)
         {
             largest = arr[i];
         }
-        if (arr[i] < smallest)
-        {
-            smallest = arr[i];
-        }
     }
-    printf("The largest element of array is %d\n", largest);
-    printf("The smallest element of array is %d\n", smallest);
-    return 0;
+    return largest;
 }
 
 // OUTPUT
 /*
 Enter the number of elements in array
-4
+5
 Enter the elements of array
-1 2 3 4
-The largest element of array is 4
-The smallest element of array is 1
+5 4 3 2 1
+The largest element of array is 5
 */
